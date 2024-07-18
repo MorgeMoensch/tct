@@ -1,12 +1,39 @@
 
 
-function submitSubscription() {
+async function submitSubscription() {
     let emailInput = document.getElementById('home-mail-input').value;
 
-    sendToSIB(emailInput)
+    let response = await sendToSIB(emailInput);
+
+    if(response?.ok) {
+        document.getElementById('home-mail-input').value = '';
+        window.location.href = `/mailinglist-mobile.html?mail=${email}`
+    } else {
+        console.log(response.ok)
+        alert("Something went wrong. Try again later.");
+    }
 }
 
-async function sendToSIB(email) {
+async function submitFormAndNavigate() {
+
+    let mailInput = document.getElementById('EMAIL');
+    let mailaddress = mailInput.value;
+    let firstNameInput = document.getElementById('VORNAME');
+    let firstName = firstNameInput.value;
+
+    let response = await sendToSIB(mailaddress, firstName);
+
+    if(response?.ok) {
+        document.getElementById('EMAIL').value = '';
+        document.getElementById('VORNAME').value = '';
+        window.location.href = `/mailinglist-mobile.html?mail=${mailaddress}&firstname=${firstName}`;
+    } else {
+        console.log(response.ok)
+        alert("Something went wrong. Try again later.");
+    }
+}
+
+async function sendToSIB(email, firstName) {
     let requestBody = `-----------------------------438965319724666113548609642
 Content-Disposition: form-data; name="EMAIL"
 
@@ -14,7 +41,7 @@ ${email}
 -----------------------------438965319724666113548609642
 Content-Disposition: form-data; name="VORNAME"
 
-
+${firstName}
 -----------------------------438965319724666113548609642
 Content-Disposition: form-data; name="SMS__COUNTRY_CODE"
 
@@ -43,13 +70,7 @@ de
         body: requestBody
         });
 
-    if(response?.ok) {
-        document.getElementById('home-mail-input').value = '';
-        window.location.href = `/mailinglist-mobile.html?mail=${email}`
-    } else {
-        console.log(response.ok)
-        alert("Something went wrong. Try again later.");
-    }
+    return response;
 }
 
 function validateEmail() {
