@@ -7,7 +7,7 @@ async function submitSubscription() {
 
     if(response?.ok) {
         document.getElementById('home-mail-input').value = '';
-        window.location.href = `/mailinglist-mobile.html?mail=${email}`
+        window.location.href = `/mailinglist-mobile.html?mail=${emailInput}`
     } else {
         console.log(response.ok)
         alert("Something went wrong. Try again later.");
