@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Charming Tools: Let Go Preview</title>
+</head>
+<style>
+    body {
+        background-color: #e8ddb5;
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    #letgo-image, #letgo-audio {
+        width: 25em;
+    }
+
+    @media (max-width: 992px) {
+        body {
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #letgo-image, #letgo-audio {
+            width: 80vw;
+        }
+    }
+
+</style>
+<body>
+<div style="text-align: center;" id="curveball-radio-premiere">
+    <h1>'Let Go' by The Charming Tools</h1>
+    <img src="assets/img/artwork-letgo.webp" id="letgo-image">
+    <figure style="margin-bottom: 0">
+        <audio controls src="/assets/let-go-preview.mp3" id="letgo-audio"></audio>
+    </figure>
+</div>
+</body>
+</html>
