@@ -56,8 +56,8 @@ body:before {
     right: 0;
     bottom: 0;
     z-index: -1;
-    filter: blur(15px);
-    margin: -25px;
+    filter: blur(35px);
+    margin: -55px;
 }
 
 #content-wrapper {
