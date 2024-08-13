@@ -47,7 +47,7 @@ table {
 
 body:before {
     content: "";
-    background-image: url('https://thecharmingtools.com/assets/img/artwork-letgo.webp');
+    background-image: url('https://thecharmingtools.com/assets/img/tct-4.webp');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -84,6 +84,10 @@ body:before {
     color: white;
 }
 
+.glass:hover {
+    background: rgba(80, 80, 80, 0.45);
+}
+
 #header {
     height: 14rem;
     width: 27rem;
@@ -95,7 +99,7 @@ body:before {
 }
 
 h1 {
-    font-size: 25pt;
+    font-size: 2rem;
     font-family: "helvetica";
 }
 
@@ -141,6 +145,45 @@ h1 {
 
 .link-icon-wrapper > img {
     height: 2.5rem;
-    display: block;
+}
 
+@media (max-width: 992px) {
+    #header {
+        width: 75vw;
+        height: 28rem;
+    }
+
+    #header-img {
+        height: 30rem;
+        width: 30rem;
+        margin-top: -10rem;
+    }
+
+
+    #link-section > a {
+        width: 75vw;
+        height: 8rem;
+        line-height: 8rem;
+        font-size: 3.5rem;
+    }
+
+    .link-icon-wrapper {
+        height: 8rem;
+        width: 8rem;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .link-icon-wrapper > img {
+        height: 8rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .glass {
+        border-radius: 20px;
+    }
 }
