@@ -60,8 +60,8 @@ table {
 }
 
 #blurred-background:after {
-    backdrop-filter: blur(35px) brightness(75%);
-    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px) brightness(70%);
+    -webkit-backdrop-filter: blur(35px) brightness(70%);
     pointer-events: none;
     content: "";
     position: absolute;
@@ -83,14 +83,14 @@ table {
 
 .glass {
     /* From https://css.glass */
-    background: rgba(51, 51, 51, 0.45);
+    background: rgba(255, 255, 255, 0.45);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
-    border: 1px solid rgba(51, 51, 51, 0.63);
+    border: 1px solid rgba(255, 255, 255, 0.63);
 
-    color: white;
+    color: black;
 }
 
 .glass:hover {
