@@ -32,7 +32,9 @@
             //event.preventDefault();
             console.log("moin");
             fbq('track', 'clickSpotify');
-            window.location.href = 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23';
+            fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+            alert("huhu");
+            //window.location.href = 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23';
         }
     </script>
     <noscript><img height="1" width="1" style="display:none"
