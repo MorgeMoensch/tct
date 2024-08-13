@@ -201,6 +201,15 @@ h1 {
         height: 8rem;
     }
 
+    #apple-logo {
+        background-color: transparent;
+    }
+
+    #apple-logo > img {
+        height: 10rem;
+        margin: 0;
+    }
+
     h1 {
         font-size: 5.5rem;
     }
