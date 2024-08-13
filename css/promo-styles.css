@@ -84,13 +84,13 @@ table {
 .glass {
     /* From https://css.glass */
     /*background: rgba(255, 255, 255, 0.45);*/
-    background: rgba(51, 51, 51, 0.45);
+    background: rgba(70, 70, 70, 0.45);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     /*border: 1px solid rgba(255, 255, 255, 0.63);*/
-    border: 1px solid rgba(51, 51, 51, 0.63);
+    border: 1px solid rgba(70, 70, 70, 0.63);
 
     color: white;
 }
@@ -112,6 +112,7 @@ table {
 h1 {
     font-size: 2rem;
     font-family: "helvetica";
+    font-weight: bold;
 }
 
 #header-img {
@@ -143,7 +144,7 @@ h1 {
 }
 
 .link-icon-wrapper {
-    background-color: white;
+    background-color: black;
     height: 3rem;
     width: 3rem;
     border-top-left-radius: 16px;
@@ -159,6 +160,10 @@ h1 {
 }
 
 @media (max-width: 992px) {
+    #content-wrapper {
+        margin-top: 4rem;
+    }
+
     #header {
         width: 90vw;
         height: 28rem;
@@ -175,7 +180,6 @@ h1 {
         width: 30rem;
         margin-top: -10rem;
     }
-
 
     #link-section > a {
         width: 90vw;
@@ -197,7 +201,7 @@ h1 {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
 
     .glass {
