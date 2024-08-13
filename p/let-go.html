@@ -27,6 +27,14 @@
         fbq('init', '806119535068616');
         fbq('track', 'PageView');
     </script>
+    <script>
+        function clickSpotify() {
+            //event.preventDefault();
+            console.log("moin");
+            fbq('track', 'clickSpotify');
+            window.location.href = 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23';
+        }
+    </script>
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=806119535068616&ev=PageView&noscript=1"
     /></noscript>
@@ -38,24 +46,24 @@
 <div id="content-wrapper">
     <section id="header" class="glass">
         <img src="https://thecharmingtools.com/assets/img/cover_oscar.webp" id="header-img">
-        <h1>Oscar - out now</h1>
+        <h1>Let Go - out now</h1>
     </section>
     <section id="link-section">
-        <a href="https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23" class="glass">
+        <div href="https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23" class="glass link" onclick="clickSpotify()">
             <div class="link-icon-wrapper"><img src="../assets/spotify_icon.svg" /></div>
             <div>Spotify</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
-        <a href="https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE" class="glass">
+        </div>
+        <div href="https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE" class="glass link">
             <div class="link-icon-wrapper" id="apple-logo"><img src="../assets/apple_music_icon.svg" /></div>
             <div>Apple Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
-        <a href="https://youtu.be/srJ7a3DRs90" class="glass">
+        </div>
+        <div href="https://youtu.be/srJ7a3DRs90" class="glass link">
             <div class="link-icon-wrapper"><img src="../assets/youtube_music_icon.svg" /></div>
             <div>YouTube Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
+        </div>
     </section>
 </div>
 
