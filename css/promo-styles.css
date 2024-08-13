@@ -60,8 +60,8 @@ table {
 }
 
 #blurred-background:after {
-    backdrop-filter: blur(35px) brightness(25%);
-    -webkit-backdrop-filter: blur(35px) brightness(25%);
+    backdrop-filter: blur(35px) brightness(40%);
+    -webkit-backdrop-filter: blur(35px) brightness(40%);
     pointer-events: none;
     content: "";
     position: absolute;
@@ -84,13 +84,13 @@ table {
 .glass {
     /* From https://css.glass */
     /*background: rgba(255, 255, 255, 0.45);*/
-    background: rgba(80, 80, 80, 0.45);
+    background: rgba(100, 100, 100, 0.45);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     /*border: 1px solid rgba(255, 255, 255, 0.63);*/
-    border: 1px solid rgba(80, 80, 80, 0.63);
+    border: 1px solid rgba(100, 100, 100, 0.63);
 
     color: white;
 }
@@ -107,6 +107,7 @@ table {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -126,7 +127,7 @@ h1 {
 #link-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 #link-section > a {
