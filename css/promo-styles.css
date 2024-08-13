@@ -171,14 +171,14 @@ h1 {
 
     #link-section > a {
         width: 90vw;
-        height: 8rem;
-        line-height: 8rem;
+        height: 10rem;
+        line-height: 10rem;
         font-size: 3.5rem;
     }
 
     .link-icon-wrapper {
-        height: 8rem;
-        width: 8rem;
+        height: 10rem;
+        width: 10rem;
 
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
