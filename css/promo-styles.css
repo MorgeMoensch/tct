@@ -160,6 +160,12 @@ h1 {
     #header {
         width: 90vw;
         height: 28rem;
+
+        background: none;
+        border: none;
+        box-shadow: none;
+        filter: none;
+        color: white;
     }
 
     #header-img {
