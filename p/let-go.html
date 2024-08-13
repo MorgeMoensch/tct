@@ -6,9 +6,9 @@
 
     <meta property="og:title" content="Listen to Let Go by The Charming Tools" />
     <meta property="og:url" content="https://thecharmingtools.com/p/oscar.html" />
-    <meta property="og:image" content="https://thecharmingtools.com/assets/img/cover_oscar.webp" />
+    <meta property="og:image" content="https://thecharmingtools.com/assets/img/artwork-letgo.webp" />
 
-    <link rel="preload" as="image" href="https://thecharmingtools.com/assets/img/cover_oscar.webp" />
+    <link rel="preload" as="image" href="https://thecharmingtools.com/assets/img/artwork-letgo.webp" />
     <link rel="preload" as="image" href="https://media.mtts.ch/tct/img/tct-muenster-background-minimal.webp" />
     <link rel="preload" as="image" href="../assets/spotify_icon.svg" />
     <link rel="preload" as="image" href="../assets/apple_music_icon.svg" />
@@ -28,13 +28,9 @@
         fbq('track', 'PageView');
     </script>
     <script>
-        function clickSpotify() {
-            //event.preventDefault();
-            console.log("moin");
-            fbq('track', 'clickSpotify');
-            fbq('track', 'Purchase', {currency: "USD", value: 30.00});
-            alert("huhu");
-            //window.location.href = 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23';
+        function clickButton(eventName, destinationUrl) {
+            fbq('track', eventName);
+            window.location.href = destinationUrl;
         }
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -47,29 +43,26 @@
 <div id="blurred-background"></div>
 <div id="content-wrapper">
     <section id="header" class="glass">
-        <img src="https://thecharmingtools.com/assets/img/cover_oscar.webp" id="header-img">
+        <img src="https://thecharmingtools.com/assets/img/artwork-letgo.webp" id="header-img">
         <h1>Let Go - out now</h1>
     </section>
     <section id="link-section">
-        <div href="https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23" class="glass link" onclick="clickSpotify()">
+        <div class="glass link" onclick="clickButton('clickSpotify', 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23')">
             <div class="link-icon-wrapper"><img src="../assets/spotify_icon.svg" /></div>
             <div>Spotify</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
         </div>
-        <div href="https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE" class="glass link">
+        <div class="glass link" onclick="clickButton('clickApple Music', 'https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE')">
             <div class="link-icon-wrapper" id="apple-logo"><img src="../assets/apple_music_icon.svg" /></div>
             <div>Apple Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
         </div>
-        <div href="https://youtu.be/srJ7a3DRs90" class="glass link">
+        <div class="glass link" onclick="clickButton('clickYoutube Music', 'https://youtu.be/srJ7a3DRs90')">
             <div class="link-icon-wrapper"><img src="../assets/youtube_music_icon.svg" /></div>
             <div>YouTube Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
         </div>
     </section>
 </div>
-
-
-
 </body>
 </html>

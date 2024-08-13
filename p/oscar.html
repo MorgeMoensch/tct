@@ -27,6 +27,12 @@
         fbq('init', '456821376757537');
         fbq('track', 'PageView');
     </script>
+    <script>
+        function clickButton(eventName, destinationUrl) {
+            fbq('track', eventName);
+            window.location.href = destinationUrl;
+        }
+    </script>
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=456821376757537&ev=PageView&noscript=1"
     /></noscript>
@@ -41,25 +47,22 @@
         <h1>Oscar - out now</h1>
     </section>
     <section id="link-section">
-        <a href="https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23" class="glass">
+        <div class="glass link" onclick="clickButton('clickSpotify', 'https://open.spotify.com/intl-de/track/3pn1dkj0a5k6KK19DNYuRS?si=76563b5095184f23')">
             <div class="link-icon-wrapper"><img src="../assets/spotify_icon.svg" /></div>
             <div>Spotify</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
-        <a href="https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE" class="glass">
+        </div>
+        <div class="glass link" onclick="clickButton('clickApple Music', 'https://music.apple.com/ch/album/oscar/1749525108?i=1749525630&l=de-DE')">
             <div class="link-icon-wrapper" id="apple-logo"><img src="../assets/apple_music_icon.svg" /></div>
             <div>Apple Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
-        <a href="https://youtu.be/srJ7a3DRs90" class="glass">
+        </div>
+        <div class="glass link" onclick="clickButton('clickYoutube Music', 'https://youtu.be/srJ7a3DRs90')">
             <div class="link-icon-wrapper"><img src="../assets/youtube_music_icon.svg" /></div>
             <div>YouTube Music</div>
             <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
-        </a>
+        </div>
     </section>
 </div>
-
-
-
 </body>
 </html>

@@ -142,6 +142,8 @@ h1 {
 
     display: flex;
     justify-content: space-between;
+
+    cursor: pointer;
 }
 
 .link-icon-wrapper {
