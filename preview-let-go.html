@@ -5,6 +5,10 @@
     <title>The Charming Tools: Let Go Preview</title>
     <script defer data-domain="thecharmingtools.com" src="https://plausible.io/js/script.outbound-links.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script>
+        function test() {
+            console.log('moin')
+        plausible('matthias-test', { props: {song: 'oscar'}})}</script>
 </head>
 <style>
     body {
@@ -43,6 +47,7 @@
     <figure style="margin-bottom: 0">
         <audio controls src="/assets/let-go-preview.mp3" id="letgo-audio"></audio>
     </figure>
+    <button onclick="test()">Click</button>
 </div>
 </body>
 </html>
