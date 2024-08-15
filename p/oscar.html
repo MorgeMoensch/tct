@@ -30,8 +30,7 @@
     <script>
         function clickButton(eventName, destinationUrl) {
             fbq('track', eventName);
-            plausible(eventName, { props: {song: 'oscar'}});
-            window.location.href = destinationUrl;
+            plausible(eventName, {callback: () => {window.location.href = destinationUrl}, props: {song: 'oscar'}});
         }
     </script>
     <noscript><img height="1" width="1" style="display:none"
