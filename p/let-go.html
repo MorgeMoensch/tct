@@ -30,6 +30,7 @@
     <script>
         function clickButton(eventName, destinationUrl) {
             fbq('track', eventName);
+            plausible(eventName, { props: {song: 'let-go'}});
             window.location.href = destinationUrl;
         }
     </script>
@@ -37,7 +38,7 @@
                    src="https://www.facebook.com/tr?id=806119535068616&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    <script defer data-domain="thecharmingtools.com" src="https://plausible.io/js/script.outbound-links.js"></script>
+    <script defer data-domain="thecharmingtools.com" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 <link rel="stylesheet" href="../css/promo-styles.css?v1.1"/>
