@@ -47,7 +47,7 @@ table {
 
 #blurred-background {
     content: "";
-    background-image: url('https://media.mtts.ch/tct/img/tct-muenster-background-minimal.webp');
+    background-image: url('https://thecharmingtools.com/assets/tct-muenster-background-minimal.webp');
     background-size: cover;
     background-position: center;
     position: fixed;
