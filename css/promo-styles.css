@@ -95,7 +95,7 @@ table {
     color: white;
 }
 
-.glass:hover {
+#link-section .glass:hover {
     background: rgba(80, 80, 80, 0.45);
 }
 
