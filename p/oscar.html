@@ -35,7 +35,7 @@
     <script>
         function clickButton(eventName, destinationUrl) {
             fbq('track', eventName);
-            plausible(eventName, {callback: () => {window.location.href = destinationUrl}, props: {song: 'oscar'}});
+            plausible(eventName, {callback: () => {window.location.assign(destinationUrl)}, props: {song: 'oscar'}});
         }
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -50,7 +50,7 @@
 <div id="blurred-background"></div>
 <div id="content-wrapper">
     <section id="header" class="glass">
-        <img src="https://thecharmingtools.com/assets/img/cover_oscar_small.webp" id="header-img">
+        <img src="https://thecharmingtools.com/assets/img/cover_oscar_small.webp" id="header-img" alt="Cover for 'Oscar' by the Charming Tools. The three band members are sitting on a mural above the Aare river at night.">
         <h1>Oscar - out now</h1>
     </section>
     <section id="link-section">
