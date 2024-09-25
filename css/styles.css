@@ -11677,6 +11677,10 @@ a {
   color: black;
 }
 
+.hidden {
+  display: none;
+}
+
 #tct-header {
   width: 4rem;
   position: absolute;
