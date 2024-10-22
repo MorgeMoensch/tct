@@ -11876,10 +11876,30 @@ html {
     gap: 1rem;
   }
 
-  .concert-part-1:after, .concert-part-2:after {
+  .concert > * {
+    padding: 3px;
+  }
+
+  .concert-part-1:after, .concert-part-2:after, .concert-part-3:after {
     content: '';
     margin-left: 1rem;
     border-left: 1px solid black;
+  }
+
+  .concert-button {
+    background-color: #212529;
+    background-color: var(--bs-primary);
+    color: var(--bs-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 3px 3px 3px 6px;
+  }
+
+  .concert-button:hover {
+    background-color: #292d31;
+    color: white;
   }
 
   .header-logos {
@@ -12151,6 +12171,19 @@ html {
     position: absolute;
     right: 0;
     z-index: 55;
+  }
+
+  .concert-button {
+    background-color: #323c6b;
+    background-color: #323c6b;
+    color: var(--bs-primary);
+    color: #323c6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
   }
 
   #dates-hr {

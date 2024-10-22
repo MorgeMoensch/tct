@@ -2,34 +2,20 @@
   "nextDates": [
     {
       "active": true,
-      "date": "2024-04-24",
-      "time": "19:30",
-      "eventName": "Bestival",
-      "location": "Grosse Halle, Bern",
-      "link": "https://www.bestival.ch"
-    },
-    {
-      "active": true,
-      "date": "2024-04-26",
-      "time": "20:00",
-      "eventName": "Showcase",
-      "location": "Polygon, Bern",
-      "link": ""
-    },
-    {
-      "active": true,
       "date": "2024-07-17",
       "time": "20:00",
       "eventName": "Konzert unter der Linde",
       "location": "Kulturhof, Köniz",
+      "buttonText": "",
       "link": ""
     },
     {
       "active": true,
       "date": "2024-11-09",
       "time": "20:30",
-      "eventName": "EP-Taufe (Ticket)",
+      "eventName": "EP-Taufe",
       "location": "Werkhof Egelsee, Bern",
+      "buttonText": "Tickets",
       "link": "https://eventfrog.ch/de/p/konzert/indie-alternative/the-charming-concert-ep-taufe-7249469879673105839.html"
     }
   ]

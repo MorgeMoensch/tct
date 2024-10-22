@@ -137,7 +137,7 @@ function setupLiveDate(concert) {
 
     let eventListItem = document.createElement('li');
     let eventItem;
-    if(concert.link != "") {
+    if(concert.link != "" && false) {
         eventItem = document.createElement('a');
         eventItem.href = concert.link;
         eventItem.target = "_blank";
@@ -153,12 +153,25 @@ function setupLiveDate(concert) {
     locationItem.innerText = concert.location;
     locationItem.classList.add('concert-part-3')
 
+    let buttonItem = document.createElement('a');
+    if(concert.link != "") {
+        buttonItem = document.createElement('a');
+        buttonItem.href = concert.link;
+        buttonItem.target = "_blank";
+    } else {
+        eventItem = document.createElement('div')
+    }
+    buttonItem.innerText = concert.buttonText;
+    buttonItem.classList.add('concert-part-4');
+    buttonItem.classList.add('concert-button');
+
     let horizontalLineListItem = document.createElement('li')
     let horizontalLine = document.createElement('hr')
 
     liveDateItem.append(dateItem);
     liveDateItem.append(eventItem);
     liveDateItem.append(locationItem);
+    liveDateItem.append(buttonItem);
 
     horizontalLineListItem.append(horizontalLine);
 
