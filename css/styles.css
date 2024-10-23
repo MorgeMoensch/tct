@@ -11888,8 +11888,8 @@ html {
 
   .concert-button {
     background-color: #212529;
-    background-color: var(--bs-primary);
-    color: var(--bs-primary);
+    /*background-color: var(--bs-primary);*/
+    /*color: var(--bs-primary);*/
     color: white;
     border: none;
     border-radius: 5px;
@@ -12175,7 +12175,7 @@ html {
 
   .concert-button {
     background-color: #323c6b;
-    background-color: #323c6b;
+    background-color: #212529;
     color: var(--bs-primary);
     color: #323c6b;
     color: white;
