@@ -11852,12 +11852,13 @@ html {
 }
 
 #dates-list {
-  max-width: 60vw;
+  /*max-width: 60vw;*/
   list-style: none;
 }
 
 #dates-list > li:last-child {
   display: none;
+  max-width: 60vw;
 }
 
 @media(min-width: 993px) {
@@ -12197,6 +12198,11 @@ html {
   }
 
   #dates-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  #dates-list > li {
     max-width: 85vw;
   }
 
