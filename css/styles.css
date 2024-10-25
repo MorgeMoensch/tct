@@ -11854,6 +11854,7 @@ html {
 #dates-list {
   /*max-width: 60vw;*/
   list-style: none;
+  margin-top: -0.25rem;
 }
 
 #dates-list > li:last-child {
@@ -12200,6 +12201,7 @@ html {
   #dates-list {
     display: flex;
     justify-content: center;
+    margin-top: -0.2rem;
   }
 
   #dates-list > li {
