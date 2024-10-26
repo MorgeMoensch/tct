@@ -11862,6 +11862,80 @@ html {
   max-width: 60vw;
 }
 
+#merch {
+  background-color: #212529;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*
+#merch-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.merch-item-tile {
+  width: 15rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.merch-item-tile figure img {
+  fit-content: contain;
+  width: 15rem;
+}
+
+.merch-item-big {
+  background-color: white;
+  z-index: 999999;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+#merch-2 {
+  background-color: #212529;
+}
+
+.grid-product__wrap-inner {
+  background-color: white !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+
+#merch .ecsp {
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#shop {
+  mind-width: 100vw;
+  min-height: 100vw;
+  display: block;
+  margin-top: 5em;
+}*/
+
+.ec-size .ec-store__content-wrapper .ec-related-products {
+  display: none;
+}
+
+#merch-items-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ecsp-SingleProduct-v2 {
+  border-radius: 1rem
+}
+
 @media(min-width: 993px) {
   #mobile-navigation {
     display: none;
