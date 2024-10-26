@@ -11930,10 +11930,21 @@ html {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .ecsp-SingleProduct-v2 {
-  border-radius: 1rem
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.ecsp-SingleProduct-v2 .ecwid-SingleProduct-picture {
+  object-fit: cover;
+}
+
+.ecsp-SingleProduct-v2 .ecwid-SingleProduct-picture > img {
+  margin: none !important;
+  width: 100% !important;
 }
 
 @media(min-width: 993px) {
@@ -12284,5 +12295,9 @@ html {
 
   .header-logos {
     display: none;
+  }
+
+  .ecsp-SingleProduct-v2 {
+    width: 90vw;
   }
 }
