@@ -11947,6 +11947,15 @@ html {
   width: 100% !important;
 }
 
+.ec-minicart {
+  background-color: #226F54 !important;
+  border-color: #226F54 !important;
+}
+
+.ec-minicart .ec-minicart__icon path {
+  stroke: white !important;
+}
+
 @media(min-width: 993px) {
   #mobile-navigation {
     display: none;
