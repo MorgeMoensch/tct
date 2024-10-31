@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elves - The Charming Tools</title>
+
+    <meta property="og:title" content="Listen to Elves by The Charming Tools" />
+    <meta property="og:url" content="https://thecharmingtools.com/p/let-go.html" />
+    <meta property="og:image" content="https://thecharmingtools.com/assets/img/cover_letgo_small.webp" />
+
+    <link rel="preload" as="image" href="https://thecharmingtools.com/assets/img/cover_letgo_small.webp" />
+    <link rel="preload" as="image" href="https://thecharmingtools.com/assets/img/tct-muenster-background-minimal.webp" />
+    <link rel="preload" as="image" href="../assets/spotify_icon.svg" />
+    <link rel="preload" as="image" href="../assets/apple_music_icon.svg" />
+    <link rel="preload" as="image" href="../assets/youtube_music_icon.svg" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '806119535068616');
+        fbq('track', 'PageView');
+    </script>
+    <script>
+        function clickButton(eventName, destinationUrl) {
+            fbq('track', eventName);
+            plausible(eventName, { props: {song: 'elves'}});
+            plausible(eventName, {callback: () => {window.location.assign(destinationUrl)}, props: {song: 'elves'}});
+        }
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=806119535068616&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script defer data-domain="thecharmingtools.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+<link rel="stylesheet" href="../css/promo-styles.css?v1.1"/>
+<body>
+<div id="blurred-background"></div>
+<div id="content-wrapper">
+    <section id="header" class="glass">
+        <img src="https://thecharmingtools.com/assets/img/cover_letgo_small.webp" id="header-img" alt="Cover for 'Elves' by the Charming Tools. The three band members are sitting on a mural above the Aare river at night.">
+        <h1>Elves - out now</h1>
+    </section>
+    <section id="link-section">
+        <div class="glass link" onclick="clickButton('clickSpotify', 'https://open.spotify.com/intl-de/track/50aS5K4Gno2uGp1ZaiyFTC?si=e5f2fca6f3474afa')">
+            <div class="link-icon-wrapper"><img src="../assets/spotify_icon.svg" /></div>
+            <div>Spotify</div>
+            <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
+        </div>
+        <div class="glass link" onclick="clickButton('clickApple Music', 'https://music.apple.com/ch/album/let-go/1758314105?i=1758314117&l=de-DE')">
+            <div class="link-icon-wrapper" id="apple-logo"><img src="../assets/apple_music_icon.svg" /></div>
+            <div>Apple Music</div>
+            <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
+        </div>
+        <div class="glass link" onclick="clickButton('clickYoutube Music', 'https://music.youtube.com/watch?v=C7yBwWS_Upk&si=UZo8Uy2cW2GkDo15')">
+            <div class="link-icon-wrapper"><img src="../assets/youtube_music_icon.svg" /></div>
+            <div>YouTube Music</div>
+            <div style="margin-right: 1.4rem">&#x25B6;&#xFE0E;</div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
