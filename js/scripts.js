@@ -191,14 +191,10 @@ function getDateThreeDaysAgo(date = new Date()) {
 }
 
 function removeDuplicateEcwidCarts() {
-    console.log("removeDupölicates")
     let carts = document.getElementsByClassName("ecwid-productBrowser-CartPage");
     let numberOfCarts = carts.length;
-    console.log("numberOfCarts: " + numberOfCarts)
     if(numberOfCarts > 1) {
-        // Skip the first one.
-        for (let i = 1; i++; i < numberOfCarts) {
-            carts[i].remove();
-        }
+        // Always keep the first one. No loop needed, since it is already looped with setInterval.
+        carts[1].remove();
     }
 }
