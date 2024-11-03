@@ -101,6 +101,7 @@ function closeSubscribedAlert() {
 
 window.onload = async () => {
     let threeDaysAgo = getDateThreeDaysAgo();
+    setInterval(removeDuplicateEcwidCarts, 500);
     fetch('/data/liveDates.json').then(response => response.json()).then(
         async result => {
             if(result.nextDates.filter(date => date.active).length == 0) {
@@ -187,4 +188,17 @@ function getDateThreeDaysAgo(date = new Date()) {
     previous.setDate(date.getDate() - 3);
 
     return previous;
+}
+
+function removeDuplicateEcwidCarts() {
+    console.log("removeDupölicates")
+    let carts = document.getElementsByClassName("ecwid-productBrowser-CartPage");
+    let numberOfCarts = carts.length;
+    console.log("numberOfCarts: " + numberOfCarts)
+    if(numberOfCarts > 1) {
+        // Skip the first one.
+        for (let i = 1; i++; i < numberOfCarts) {
+            carts[i].remove();
+        }
+    }
 }
