@@ -173,13 +173,13 @@ h1 {
 
     #header {
         width: 90vw;
-        height: 28rem;
-
+        height: fit-content;
         background: none;
         border: none;
         box-shadow: none;
         filter: none;
         color: white;
+        text-align: center;
     }
 
     #header-img {
