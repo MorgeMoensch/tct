@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Charming EP - The Charming Tools</title>
+    <title>The Charming Tools</title>
 
-    <meta property="og:title" content="Listen to The Charming EP by The Charming Tools" />
+    <meta property="og:title" content="The Charming Tools" />
     <meta property="og:url" content="https://thecharmingtools.com/p/let-go.html" />
     <meta property="og:image" content="https://thecharmingtools.com/assets/img/cover_the_charming_ep_small.webp" />
 
@@ -35,8 +35,9 @@
     <script>
         function clickButton(eventName, destinationUrl) {
             fbq('track', eventName);
-            plausible(eventName, { props: {song: 'the-charming-ep'}});
-            plausible(eventName, {callback: () => {window.location.assign(destinationUrl)}, props: {song: 'the-charming-ep'}});
+            plausible(eventName, { props: {song: 'the-charming-tools'}});
+            plausible(eventName, {callback: () => {window.location.assign(destinationUrl)}, props: {song: 'the-charming-tools'}});
+            setTimeout(window.location.assign(destinationUrl), 1200)
         }
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -52,7 +53,7 @@
 <div id="content-wrapper">
     <section id="header" class="glass">
         <img src="https://thecharmingtools.com/assets/img/cover_the_charming_ep_small.webp" id="header-img" alt="Cover for 'The Charming EP' by the Charming Tools. The three band members are sitting on a mural above the Aare river at night.">
-        <h1>The Charming EP - out now</h1>
+        <h1>The Charming Tools</h1>
     </section>
     <section id="link-section">
         <div class="glass link" onclick="clickButton('clickSpotify', 'https://open.spotify.com/intl-de/artist/1b3al49bNXWL5iCHYCzGVA?si=mKrpWHmJTWqzxZw_jSs_SA')">
