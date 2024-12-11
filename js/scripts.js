@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', event => {
         console.log('doing it')
         history.scrollRestoration = "manual";
         let hashId = window.location.hash.substring(1);
-        document.getElementById(hashId).scrollIntoView();
+        document.getElementById(hashId).scrollIntoView({ behavior: 'smooth' });
     }
 });
 
