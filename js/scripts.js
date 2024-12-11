@@ -52,6 +52,15 @@ window.addEventListener('DOMContentLoaded', event => {
         alertBackground.style.display = "block";
         plausible('Newsletter-Subscribed')
     }
+
+    // This fixes the issue that Safari would scroll to the position the user scrolled to before reloading
+    // or revisiting the page, instead of the anchor.
+    if(window.location.hash) {
+        console.log('doing it')
+        history.scrollRestoration = "manual";
+        let hashId = window.location.hash.substring(1);
+        document.getElementById(hashId).scrollIntoView();
+    }
 });
 
 function changeMobileMenuVisibility() {
