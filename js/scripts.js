@@ -59,7 +59,15 @@ window.addEventListener('DOMContentLoaded', event => {
         console.log('doing it')
         history.scrollRestoration = "manual";
         let hashId = window.location.hash.substring(1);
+        // Smoth doesn't solve the issue.
         document.getElementById(hashId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const searchParams = new URLSearchParams(window.location.search);
+    if(searchParams.has("scrollTo")) {
+        console.log("wuuha")
+        history.scrollRestoration = "manual";
+        document.getElementById(searchParams.get("scrollTo")).scrollIntoView({ behavior: 'smooth' });
     }
 });
 
